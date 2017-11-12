@@ -11,6 +11,7 @@ class CashRegister
 
   def add_item(title, price, quantity=1)
     @total += (price * quantity)
+    binding.pry
     @items << title
     @last_item = title
     @last_price = price
